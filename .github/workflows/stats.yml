@@ -4,7 +4,7 @@ on:
     - cron: "17 */3 * * *"   # every 3 hours
   workflow_dispatch: {}
   push:
-    paths: ["tracker/posts.json"]
+    paths: ["tracker/**"]
 permissions:
   contents: write
 jobs:
@@ -16,6 +16,8 @@ jobs:
         with: {python-version: "3.12"}
       - run: pip install -q -U yt-dlp
       - run: python tracker/collect.py
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
       - name: Save results
         run: |
           git config user.name "stats-bot"
