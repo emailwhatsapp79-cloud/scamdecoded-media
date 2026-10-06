@@ -1,3 +1,3 @@
-time_utc,post,platform,view_count,like_count,comment_count,repost_count,duration,error
-2026-10-06T03:51:25Z,2026-10-05-they-paid-him-first,tiktok,,,,,,"ERROR: [TikTok] 7693249186770341142: Unexpected response from webpage request; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Con"
-2026-10-06T03:51:25Z,2026-10-05-they-paid-him-first,youtube,,,,,,ERROR: [youtube] 0k2N64MNCgo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+time_utc,post,platform,views,likes,comments,shares,source,error
+2026-10-06T03:53:30Z,2026-10-05-they-paid-him-first,tiktok,225,1,0,0,tikwm,
+2026-10-06T03:53:30Z,2026-10-05-they-paid-him-first,youtube,,,,,,https://pipedapi.kavin.rocks: HTTP Error 403: Forbidden | https://pipedapi.adminforge.de: HTTP Error 403: Forbidden | https://api.piped.private.coffee: HTTP Error 500: Internal Server Error

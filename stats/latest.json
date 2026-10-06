@@ -1,14 +1,18 @@
 {
-  "updated_utc": "2026-10-06T03:51:25Z",
+  "updated_utc": "2026-10-06T03:53:30Z",
   "posts": [
     {
       "id": "2026-10-05-they-paid-him-first",
       "title": "They Paid Him First",
       "tiktok": {
-        "error": "ERROR: [TikTok] 7693249186770341142: Unexpected response from webpage request; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Con"
+        "views": 225,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "source": "tikwm"
       },
       "youtube": {
-        "error": "ERROR: [youtube] 0k2N64MNCgo: Sign in to confirm you\u2019re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-"
+        "error": "https://pipedapi.kavin.rocks: HTTP Error 403: Forbidden | https://pipedapi.adminforge.de: HTTP Error 403: Forbidden | https://api.piped.private.coffee: HTTP Error 500: Internal Server Error"
       }
     }
   ]
