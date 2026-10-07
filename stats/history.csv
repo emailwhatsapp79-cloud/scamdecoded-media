@@ -19,3 +19,7 @@ time_utc,post,platform,views,likes,comments,shares,source,error
 2026-10-07T10:12:56Z,2026-10-05-they-paid-him-first,youtube,,,,,,https://pipedapi.kavin.rocks: HTTP Error 403: Forbidden | https://pipedapi.adminforge.de: HTTP Error 403: Forbidden | https://api.piped.private.coffee: HTTP Error 500: Internal Server Error
 2026-10-07T10:12:56Z,2026-10-06-wrong-number,tiktok,64,0,0,0,tikwm,
 2026-10-07T10:12:56Z,2026-10-06-wrong-number,youtube,,,,,,https://pipedapi.kavin.rocks: HTTP Error 403: Forbidden | https://pipedapi.adminforge.de: HTTP Error 403: Forbidden | https://api.piped.private.coffee: HTTP Error 500: Internal Server Error
+2026-10-07T18:56:26Z,2026-10-05-they-paid-him-first,tiktok,225,1,0,0,tikwm,
+2026-10-07T18:56:26Z,2026-10-05-they-paid-him-first,youtube,,,,,,https://pipedapi.kavin.rocks: HTTP Error 403: Forbidden | https://pipedapi.adminforge.de: HTTP Error 403: Forbidden | https://api.piped.private.coffee: HTTP Error 500: Internal Server Error
+2026-10-07T18:56:26Z,2026-10-06-wrong-number,tiktok,64,0,0,0,tikwm,
+2026-10-07T18:56:26Z,2026-10-06-wrong-number,youtube,,,,,,https://pipedapi.kavin.rocks: HTTP Error 403: Forbidden | https://pipedapi.adminforge.de: HTTP Error 403: Forbidden | https://api.piped.private.coffee: HTTP Error 500: Internal Server Error
