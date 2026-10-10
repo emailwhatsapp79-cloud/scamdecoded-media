@@ -1,11 +1,15 @@
 {
-  "updated_utc": "2026-10-10T00:48:20Z",
+  "updated_utc": "2026-10-10T09:47:17Z",
   "posts": [
     {
       "id": "2026-10-05-they-paid-him-first",
       "title": "They Paid Him First",
       "tiktok": {
-        "error": "tikwm: HTTP Error 403: Forbidden | yt-dlp: ERROR: [TikTok] 7693249186770341142: Unexpected response from webpage request; p"
+        "views": 225,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "source": "tikwm"
       },
       "youtube": {
         "error": "https://pipedapi.kavin.rocks: HTTP Error 403: Forbidden | https://pipedapi.adminforge.de: HTTP Error 403: Forbidden | https://api.piped.private.coffee: HTTP Error 500: Internal Server Error"
@@ -15,7 +19,11 @@
       "id": "2026-10-06-wrong-number",
       "title": "Wrong Number",
       "tiktok": {
-        "error": "tikwm: HTTP Error 403: Forbidden | yt-dlp: ERROR: [TikTok] 7693477914381159702: Unexpected response from webpage request; p"
+        "views": 64,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "source": "tikwm"
       },
       "youtube": {
         "error": "https://pipedapi.kavin.rocks: HTTP Error 403: Forbidden | https://pipedapi.adminforge.de: HTTP Error 403: Forbidden | https://api.piped.private.coffee: HTTP Error 500: Internal Server Error"
