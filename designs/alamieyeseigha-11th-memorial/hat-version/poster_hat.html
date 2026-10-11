@@ -1,0 +1,117 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,500;1,600;1,700&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=block" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1350px;background:#05141c;overflow:hidden}
+.poster{position:relative;width:1080px;height:1350px;overflow:hidden;isolation:isolate}
+.abs{position:absolute}
+
+/* background photo, graded warm */
+.bg{inset:0;background:url(bg.jpg) 30% -70px/auto 1180px no-repeat;transform:scaleX(-1);filter:sepia(.3) saturate(1.4) contrast(1.08) brightness(.95)}
+.sky{inset:0;background:linear-gradient(180deg,rgba(255,138,30,.55) 0%,rgba(255,170,60,.35) 30%,rgba(255,190,90,.0) 52%);mix-blend-mode:multiply}
+.grade{inset:0;background:
+  radial-gradient(520px 380px at 800px 300px,rgba(255,196,92,.75),rgba(255,140,40,.25) 55%,transparent 75%),
+  linear-gradient(180deg,rgba(255,150,60,.35) 0%,rgba(255,120,40,.18) 35%,transparent 55%);mix-blend-mode:soft-light}
+.sun{left:700px;top:90px;width:360px;height:360px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,244,200,.95) 0,rgba(255,214,120,.55) 18%,rgba(255,170,60,.18) 45%,transparent 70%);mix-blend-mode:screen}
+.shade{inset:0;background:linear-gradient(180deg,rgba(5,20,28,0) 0%,rgba(5,20,28,0) 47%,rgba(5,22,30,.72) 54%,rgba(4,18,26,.96) 63%,#03121a 100%)}
+.vign{inset:0;background:radial-gradient(140% 100% at 50% 35%,transparent 55%,rgba(0,0,0,.55) 100%)}
+
+/* flag */
+.flag{left:-150px;top:-95px;width:520px;transform:rotate(-12deg);filter:saturate(.92) brightness(.95) drop-shadow(0 18px 24px rgba(0,0,0,.45))}
+.flag-fade{left:-120px;top:-70px;width:640px;height:420px;background:linear-gradient(110deg,transparent 55%,rgba(5,20,28,.0) 60%);}
+
+/* statue */
+.statue-glow{left:600px;top:0px;width:480px;height:620px;background:radial-gradient(closest-side,rgba(255,206,110,.5),rgba(255,170,60,.12) 60%,transparent);filter:blur(10px);mix-blend-mode:screen}
+.statue{left:615px;top:10px;height:703px;filter:drop-shadow(0 0 18px rgba(255,200,90,.45)) drop-shadow(0 20px 30px rgba(0,0,0,.5)) saturate(1.15) contrast(1.08)}
+.statue-mask{-webkit-mask-image:linear-gradient(180deg,#000 66%,transparent 92%);mask-image:linear-gradient(180deg,#000 66%,transparent 92%)}
+
+/* portrait */
+.portrait{left:-35px;top:177px;width:512px;
+  
+  filter:drop-shadow(10px 0 26px rgba(0,0,0,.55)) contrast(1.05) brightness(1.03)}
+.pshade{left:-60px;top:625px;width:720px;height:620px;background:linear-gradient(180deg,rgba(4,18,26,0) 0%,rgba(4,18,26,.6) 14%,rgba(4,18,26,.9) 28%,rgba(4,18,26,.97) 45%,#04121a 100%);-webkit-mask-image:linear-gradient(90deg,#000 82%,transparent 100%);mask-image:linear-gradient(90deg,#000 82%,transparent 100%)}
+.pwarm{left:-35px;top:177px;width:512px;height:715px;background:radial-gradient(360px 420px at 460px 200px,rgba(255,180,80,.45),transparent 70%);mix-blend-mode:soft-light;-webkit-mask-image:url(hat_faded.png);mask-image:url(hat_faded.png);-webkit-mask-size:100% 100%;mask-size:100% 100%}
+.halo{left:-40px;top:170px;width:560px;height:640px;background:radial-gradient(closest-side,rgba(3,14,20,.55),transparent);filter:blur(20px)}
+.rim{left:-40px;top:96px;width:720px;height:560px;background:radial-gradient(400px 500px at 760px 200px,rgba(255,190,90,.35),transparent 70%);mix-blend-mode:soft-light;pointer-events:none}
+
+/* bottom swoosh in flag colours */
+.swoosh{left:0;bottom:0;width:1080px;height:420px}
+
+/* text */
+.text{left:0;right:0;top:632px;text-align:center}
+.gold{background:linear-gradient(180deg,#fff6c9 0%,#f6d77a 18%,#d9a637 38%,#8d5b12 52%,#e7bd57 64%,#fff0a6 80%,#b07b22 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.n11 .gold{display:inline-block}
+.n11{font-family:'Cinzel',serif;font-weight:900;font-size:132px;line-height:.92;letter-spacing:-1px;display:inline-block;
+  filter:drop-shadow(0 1px 0 #7a4f0c) drop-shadow(0 2px 0 #6a440a) drop-shadow(0 3px 0 #5a3908) drop-shadow(0 4px 0 #4a2e06) drop-shadow(0 12px 16px rgba(0,0,0,.7))}
+.n11 .th{font-size:60px;vertical-align:top;position:relative;top:10px;margin-left:4px;letter-spacing:0;display:inline-block}
+.mem{font-family:'Cinzel',serif;font-weight:800;font-size:66px;line-height:1;letter-spacing:1px;margin-top:2px;
+  background:linear-gradient(180deg,#ffffff 0%,#f2f2f2 45%,#bfc5cc 52%,#ffffff 70%,#d9dde2 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 2px 0 #8a6a2a) drop-shadow(0 3px 0 #5a4214) drop-shadow(0 10px 14px rgba(0,0,0,.75))}
+.ribbon{position:relative;width:500px;height:59px;margin:12px auto 0}
+.ribbon svg{position:absolute;inset:0}
+.ribbon span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-weight:800;font-size:31px;letter-spacing:2px;color:#0b2a4a;padding-bottom:7px;text-shadow:0 1px 0 rgba(255,240,190,.6)}
+.late{font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:38px;color:#fff;margin-top:10px;display:flex;align-items:center;justify-content:center;gap:22px;text-shadow:0 3px 10px rgba(0,0,0,.6)}
+.late i{display:block;width:150px;height:2px;background:linear-gradient(90deg,transparent,#e9c46a)}
+.late i:last-child{background:linear-gradient(90deg,#e9c46a,transparent)}
+.name{font-family:'Playfair Display',serif;font-weight:900;font-size:64px;line-height:1.05;margin-top:4px;display:inline-block;
+  filter:drop-shadow(0 2px 0 #6a440a) drop-shadow(0 3px 0 #4a2e06) drop-shadow(0 10px 14px rgba(0,0,0,.75))}
+.body{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:24px;line-height:1.3;color:#f3efe6;width:760px;margin:10px auto 0;text-shadow:0 2px 8px rgba(0,0,0,.8)}
+.date{display:inline-flex;align-items:center;gap:16px;margin-top:18px;padding:10px 40px;border-radius:40px;
+  background:linear-gradient(180deg,#fff2b0,#e3b44c 40%,#a8731d 60%,#f2cf6e);box-shadow:0 0 0 2px #6b4a10,0 0 0 5px rgba(240,200,100,.5),0 10px 24px rgba(0,0,0,.6);
+  font-family:'Playfair Display',serif;font-weight:800;font-size:29px;color:#10233a}
+.date b{display:block;width:10px;height:10px;transform:rotate(45deg);background:#10233a}
+.grain{inset:0;pointer-events:none;opacity:.16;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+</style></head>
+<body><div class="poster">
+  <div class="abs bg"></div>
+  <div class="abs sky"></div>
+  <div class="abs grade"></div>
+  <div class="abs sun"></div>
+  <div class="abs statue-glow"></div>
+  <img class="abs statue" src="statue_plinth.png">
+  <img class="abs flag" src="flag.png">
+  <div class="abs shade"></div>
+  <div class="abs halo"></div>
+  <img class="abs portrait" src="hat_faded.png">
+  <div class="abs pwarm"></div>
+  <div class="abs pshade"></div>
+
+  <svg class="abs swoosh" viewBox="0 0 1080 420" style="height:300px" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#8a5a12"/><stop offset=".3" stop-color="#ffe9a0"/><stop offset=".6" stop-color="#c8922e"/><stop offset="1" stop-color="#fff2b8"/></linearGradient>
+    </defs>
+    <path d="M0 250 C 180 300, 300 395, 520 420 L0 420Z" fill="#0b3d91" opacity=".95"/>
+    <path d="M0 300 C 160 340, 260 405, 420 420 L0 420Z" fill="#c8102e"/>
+    <path d="M0 345 C 130 370, 210 410, 320 420 L0 420Z" fill="#0a7a3a"/>
+    <path d="M0 246 C 180 296, 300 391, 524 420" stroke="url(#g)" stroke-width="5" fill="none"/>
+    <path d="M0 296 C 160 336, 260 401, 424 420" stroke="url(#g)" stroke-width="2.5" fill="none"/>
+    <path d="M1080 330 C 960 360, 880 405, 760 420 L1080 420Z" fill="#0b3d91" opacity=".95"/>
+    <path d="M1080 370 C 990 390, 930 412, 860 420 L1080 420Z" fill="#c8102e"/>
+    <path d="M1080 326 C 960 356, 880 401, 756 420" stroke="url(#g)" stroke-width="4" fill="none"/>
+  </svg>
+
+  <div class="abs text">
+    <div class="n11"><span class="gold">11</span><span class="gold th">TH</span></div>
+    <div class="mem">MEMORIAL<br>ANNIVERSARY</div>
+    <div class="ribbon">
+      <svg viewBox="0 0 560 66">
+        <defs><linearGradient id="rb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3b8"/><stop offset=".45" stop-color="#e2b14a"/><stop offset=".55" stop-color="#b17a1f"/><stop offset="1" stop-color="#f0cc6a"/></linearGradient>
+        <linearGradient id="rbd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8862b"/><stop offset="1" stop-color="#6b4510"/></linearGradient></defs>
+        <path d="M0 14 L60 14 L60 62 L0 62 L18 38Z" fill="url(#rbd)"/>
+        <path d="M560 14 L500 14 L500 62 L560 62 L542 38Z" fill="url(#rbd)"/>
+        <path d="M60 62 L76 52 L76 62Z" fill="#4a2e06"/><path d="M500 62 L484 52 L484 62Z" fill="#4a2e06"/>
+        <rect x="40" y="2" width="480" height="52" rx="2" fill="url(#rb)" stroke="#7a5212" stroke-width="1.5"/>
+        <rect x="46" y="7" width="468" height="42" fill="none" stroke="#8a5f18" stroke-width="1" opacity=".6"/>
+      </svg>
+      <span>OF OUR HERO</span>
+    </div>
+    <div class="late"><i></i>Late Chief<i></i></div>
+    <div class="name gold">D.S.P Alamieyeseigha</div>
+    <div class="body">This memorial anniversary is an opportunity to honour his memory, celebrate his legacy and inspire present and future generations to uphold the values of service and unity to our people.</div>
+    <div class="date"><b></b>7th – 10th October 2026<b></b></div>
+  </div>
+  <div class="abs vign"></div>
+  <div class="abs grain"></div>
+</div></body></html>
