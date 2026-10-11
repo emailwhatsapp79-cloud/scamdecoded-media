@@ -28,9 +28,11 @@ html,body{width:1080px;height:1350px;background:#05141c;overflow:hidden}
 .statue-mask{-webkit-mask-image:linear-gradient(180deg,#000 66%,transparent 92%);mask-image:linear-gradient(180deg,#000 66%,transparent 92%)}
 
 /* portrait */
-.portrait{left:-40px;top:96px;width:720px;
-  -webkit-mask-image:linear-gradient(180deg,#000 58%,rgba(0,0,0,.6) 72%,transparent 90%);mask-image:linear-gradient(180deg,#000 58%,rgba(0,0,0,.6) 72%,transparent 90%);
-  filter:drop-shadow(14px 0 30px rgba(0,0,0,.45)) contrast(1.04) saturate(1.05)}
+.portrait{left:-46px;top:92px;width:740px;
+  -webkit-mask-image:linear-gradient(180deg,#000 84%,transparent 100%);mask-image:linear-gradient(180deg,#000 84%,transparent 100%);
+  filter:drop-shadow(10px 0 26px rgba(0,0,0,.55)) contrast(1.05) brightness(1.03)}
+.pshade{left:-60px;top:450px;width:860px;height:390px;background:linear-gradient(180deg,rgba(4,18,26,0) 0%,rgba(4,18,26,.5) 30%,rgba(4,18,26,.85) 52%,rgba(4,18,26,.6) 75%,rgba(4,18,26,0) 100%);-webkit-mask-image:radial-gradient(60% 70% at 40% 45%,#000 55%,transparent 100%);mask-image:radial-gradient(60% 70% at 40% 45%,#000 55%,transparent 100%)}
+.halo{left:-60px;top:120px;width:760px;height:600px;background:radial-gradient(closest-side,rgba(3,14,20,.55),transparent);filter:blur(20px)}
 .rim{left:-40px;top:96px;width:720px;height:560px;background:radial-gradient(400px 500px at 760px 200px,rgba(255,190,90,.35),transparent 70%);mix-blend-mode:soft-light;pointer-events:none}
 
 /* bottom swoosh in flag colours */
@@ -69,9 +71,10 @@ html,body{width:1080px;height:1350px;background:#05141c;overflow:hidden}
   <div class="abs statue-glow"></div>
   <img class="abs statue statue-mask" src="statue.png">
   <img class="abs flag" src="flag.png">
-  <img class="abs portrait" src="portrait.png">
-  <div class="abs rim"></div>
   <div class="abs shade"></div>
+  <div class="abs halo"></div>
+  <img class="abs portrait" src="portrait.png">
+  <div class="abs pshade"></div>
 
   <svg class="abs swoosh" viewBox="0 0 1080 420" style="height:300px" preserveAspectRatio="none">
     <defs>
