@@ -8,14 +8,14 @@ html,body{width:1080px;height:1350px;background:#05141c;overflow:hidden}
 .abs{position:absolute}
 
 /* background photo, graded warm */
-.bg{inset:0;background:url(bg.jpg) 58% 0/auto 1150px no-repeat;filter:sepia(.35) saturate(1.45) contrast(1.08) brightness(.92)}
+.bg{inset:0;background:url(bg.jpg) 30% -70px/auto 1180px no-repeat;transform:scaleX(-1);filter:sepia(.3) saturate(1.4) contrast(1.08) brightness(.95)}
 .sky{inset:0;background:linear-gradient(180deg,rgba(255,138,30,.55) 0%,rgba(255,170,60,.35) 30%,rgba(255,190,90,.0) 52%);mix-blend-mode:multiply}
 .grade{inset:0;background:
   radial-gradient(520px 380px at 800px 300px,rgba(255,196,92,.75),rgba(255,140,40,.25) 55%,transparent 75%),
   linear-gradient(180deg,rgba(255,150,60,.35) 0%,rgba(255,120,40,.18) 35%,transparent 55%);mix-blend-mode:soft-light}
-.sun{left:640px;top:150px;width:360px;height:360px;border-radius:50%;
+.sun{left:700px;top:90px;width:360px;height:360px;border-radius:50%;
   background:radial-gradient(circle,rgba(255,244,200,.95) 0,rgba(255,214,120,.55) 18%,rgba(255,170,60,.18) 45%,transparent 70%);mix-blend-mode:screen}
-.shade{inset:0;background:linear-gradient(180deg,rgba(5,20,28,0) 0%,rgba(5,20,28,0) 38%,rgba(5,22,30,.75) 50%,rgba(4,18,26,.97) 62%,#03121a 100%)}
+.shade{inset:0;background:linear-gradient(180deg,rgba(5,20,28,0) 0%,rgba(5,20,28,0) 47%,rgba(5,22,30,.72) 54%,rgba(4,18,26,.96) 63%,#03121a 100%)}
 .vign{inset:0;background:radial-gradient(140% 100% at 50% 35%,transparent 55%,rgba(0,0,0,.55) 100%)}
 
 /* flag */
@@ -23,16 +23,16 @@ html,body{width:1080px;height:1350px;background:#05141c;overflow:hidden}
 .flag-fade{left:-120px;top:-70px;width:640px;height:420px;background:linear-gradient(110deg,transparent 55%,rgba(5,20,28,.0) 60%);}
 
 /* statue */
-.statue-glow{left:590px;top:110px;width:500px;height:760px;background:radial-gradient(closest-side,rgba(255,206,110,.55),rgba(255,170,60,.15) 60%,transparent);filter:blur(10px);mix-blend-mode:screen}
-.statue{left:646px;top:112px;height:690px;filter:drop-shadow(0 0 18px rgba(255,200,90,.45)) drop-shadow(0 20px 30px rgba(0,0,0,.5)) saturate(1.15) contrast(1.08)}
+.statue-glow{left:700px;top:60px;width:420px;height:600px;background:radial-gradient(closest-side,rgba(255,206,110,.5),rgba(255,170,60,.12) 60%,transparent);filter:blur(10px);mix-blend-mode:screen}
+.statue{left:735px;top:66px;height:540px;filter:drop-shadow(0 0 18px rgba(255,200,90,.45)) drop-shadow(0 20px 30px rgba(0,0,0,.5)) saturate(1.15) contrast(1.08)}
 .statue-mask{-webkit-mask-image:linear-gradient(180deg,#000 66%,transparent 92%);mask-image:linear-gradient(180deg,#000 66%,transparent 92%)}
 
 /* portrait */
-.portrait{left:-46px;top:92px;width:740px;
-  -webkit-mask-image:linear-gradient(180deg,#000 84%,transparent 100%);mask-image:linear-gradient(180deg,#000 84%,transparent 100%);
+.portrait{left:-70px;top:128px;width:800px;
+  -webkit-mask-image:linear-gradient(180deg,#000 86%,transparent 100%);mask-image:linear-gradient(180deg,#000 86%,transparent 100%);
   filter:drop-shadow(10px 0 26px rgba(0,0,0,.55)) contrast(1.05) brightness(1.03)}
-.pshade{left:-60px;top:450px;width:860px;height:390px;background:linear-gradient(180deg,rgba(4,18,26,0) 0%,rgba(4,18,26,.5) 30%,rgba(4,18,26,.85) 52%,rgba(4,18,26,.6) 75%,rgba(4,18,26,0) 100%);-webkit-mask-image:radial-gradient(60% 70% at 40% 45%,#000 55%,transparent 100%);mask-image:radial-gradient(60% 70% at 40% 45%,#000 55%,transparent 100%)}
-.halo{left:-60px;top:120px;width:760px;height:600px;background:radial-gradient(closest-side,rgba(3,14,20,.55),transparent);filter:blur(20px)}
+.pshade{display:none}
+.halo{left:-40px;top:150px;width:720px;height:560px;background:radial-gradient(closest-side,rgba(3,14,20,.55),transparent);filter:blur(20px)}
 .rim{left:-40px;top:96px;width:720px;height:560px;background:radial-gradient(400px 500px at 760px 200px,rgba(255,190,90,.35),transparent 70%);mix-blend-mode:soft-light;pointer-events:none}
 
 /* bottom swoosh in flag colours */
@@ -69,11 +69,11 @@ html,body{width:1080px;height:1350px;background:#05141c;overflow:hidden}
   <div class="abs grade"></div>
   <div class="abs sun"></div>
   <div class="abs statue-glow"></div>
-  <img class="abs statue statue-mask" src="statue.png">
+  <img class="abs statue" src="statue_fade.png">
   <img class="abs flag" src="flag.png">
   <div class="abs shade"></div>
   <div class="abs halo"></div>
-  <img class="abs portrait" src="portrait.png">
+  <img class="abs portrait" src="portrait_hb.png">
   <div class="abs pshade"></div>
 
   <svg class="abs swoosh" viewBox="0 0 1080 420" style="height:300px" preserveAspectRatio="none">
