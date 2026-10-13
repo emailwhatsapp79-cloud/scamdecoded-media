@@ -32,6 +32,13 @@ An edit is a short story about ONE subject, not random clips put together.
   cuts first and place each shot inside a clean take (split long shots on a beat, or use slow-mo, if a take
   is too short). Never let a tool silently fall back to an unclean span.
 - Voice-over lines must never overlap each other; check the voice timeline before rendering.
+- No repeated clips: every shot comes from a DIFFERENT take. Two cuts in a row from the same take look
+  like a stutter ("instant repetitive clip"). The render script checks this and refuses to run if a take repeats.
+
+## 3c. Branding
+- Every finished edit gets a small "DEX EDITS" wordmark: white at 55% opacity, top centre (inside TikTok's
+  safe zone, clear of the side buttons and caption). Our own watermark is fine; never upload a video that
+  carries another app's logo (e.g. a TikTok download re-posted to YouTube).
 
 ## 4. Not every clip needs heavy effects
 - Use heavy effects (flash, shake, RGB split, blur) only on the drop and on key words.
