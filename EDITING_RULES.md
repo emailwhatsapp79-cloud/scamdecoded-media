@@ -27,6 +27,12 @@ An edit is a short story about ONE subject, not random clips put together.
 - After rendering, measure every cut against the audio and report the error. Anything off by more than
   one frame (17 ms) gets fixed before sending.
 
+- Every shot must sit inside ONE continuous take of its source. Professional source films have their own
+  cuts every 1-3 s; if a shot runs across one, the viewer sees an extra, off-beat cut. Detect the source's
+  cuts first and place each shot inside a clean take (split long shots on a beat, or use slow-mo, if a take
+  is too short). Never let a tool silently fall back to an unclean span.
+- Voice-over lines must never overlap each other; check the voice timeline before rendering.
+
 ## 4. Not every clip needs heavy effects
 - Use heavy effects (flash, shake, RGB split, blur) only on the drop and on key words.
 - Let the best shots breathe: clean, slower, minimal effects.
