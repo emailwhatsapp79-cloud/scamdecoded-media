@@ -18,6 +18,15 @@ An edit is a short story about ONE subject, not random clips put together.
 - Calm section before the drop = fewer cuts, clean shots. After the drop = cut on beats/words.
 - Lyrics should match what is on screen when they make sense ("on the floor" = pedal to the floor).
 
+## 3b. Transitions must land exactly on the beat
+- Cut on the real drum hits, not on beat-tracker estimates. Detect kick and snare onsets from the
+  percussive part of the track (sample-accurate), and use those times for cuts, flashes and zoom punches.
+- Render at 60 fps and snap each cut to the frame where the hit lands (never late; one frame early is fine,
+  because the eye reads a cut slightly ahead of the ear).
+- Flashes and punches peak on the hit frame itself, not after it.
+- After rendering, measure every cut against the audio and report the error. Anything off by more than
+  one frame (17 ms) gets fixed before sending.
+
 ## 4. Not every clip needs heavy effects
 - Use heavy effects (flash, shake, RGB split, blur) only on the drop and on key words.
 - Let the best shots breathe: clean, slower, minimal effects.
