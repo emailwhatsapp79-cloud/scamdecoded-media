@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-18T04:28:36Z",
+  "updated_utc": "2026-10-18T11:00:55Z",
   "posts": [
     {
       "id": "2026-10-05-they-paid-him-first",
@@ -12,7 +12,11 @@
         "source": "tikwm"
       },
       "youtube": {
-        "error": "https://pipedapi.kavin.rocks: HTTP Error 403: Forbidden | https://pipedapi.adminforge.de: HTTP Error 403: Forbidden | https://api.piped.private.coffee: HTTP Error 500: Internal Server Error"
+        "views": 48,
+        "likes": -1,
+        "comments": "",
+        "shares": "",
+        "source": "https://api.piped.private.coffee"
       }
     },
     {
