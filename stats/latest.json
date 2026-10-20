@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-20T00:19:00Z",
+  "updated_utc": "2026-10-20T08:29:07Z",
   "posts": [
     {
       "id": "2026-10-05-they-paid-him-first",
@@ -26,7 +26,7 @@
         "source": "tikwm"
       },
       "youtube": {
-        "error": "https://pipedapi.kavin.rocks: HTTP Error 403: Forbidden | https://pipedapi.adminforge.de: <urlopen error [Errno 101] Network is unreachable> | https://api.piped.private.coffee: HTTP Error 500: Internal Server Error"
+        "error": "https://pipedapi.kavin.rocks: HTTP Error 403: Forbidden | https://pipedapi.adminforge.de: HTTP Error 403: Forbidden | https://api.piped.private.coffee: HTTP Error 500: Internal Server Error"
       }
     }
   ]
