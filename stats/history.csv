@@ -335,3 +335,7 @@ time_utc,post,platform,views,likes,comments,shares,source,error
 2026-10-27T08:56:23Z,2026-10-05-they-paid-him-first,youtube,48,-1,,,https://api.piped.private.coffee,
 2026-10-27T08:56:23Z,2026-10-06-wrong-number,tiktok,,,,,,tikwm: HTTP Error 403: Forbidden | yt-dlp: ERROR: [TikTok] 7693477914381159702: Unexpected response from webpage request; p
 2026-10-27T08:56:23Z,2026-10-06-wrong-number,youtube,0,-1,,,https://api.piped.private.coffee,
+2026-10-27T15:20:10Z,2026-10-05-they-paid-him-first,tiktok,,,,,,tikwm: HTTP Error 403: Forbidden | yt-dlp: ERROR: [TikTok] 7693249186770341142: Unexpected response from webpage request; p
+2026-10-27T15:20:10Z,2026-10-05-they-paid-him-first,youtube,48,-1,,,https://api.piped.private.coffee,
+2026-10-27T15:20:10Z,2026-10-06-wrong-number,tiktok,,,,,,tikwm: HTTP Error 403: Forbidden | yt-dlp: ERROR: [TikTok] 7693477914381159702: Unexpected response from webpage request; p
+2026-10-27T15:20:10Z,2026-10-06-wrong-number,youtube,0,-1,,,https://api.piped.private.coffee,
