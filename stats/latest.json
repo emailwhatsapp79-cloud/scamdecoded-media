@@ -1,15 +1,11 @@
 {
-  "updated_utc": "2026-10-27T22:10:55Z",
+  "updated_utc": "2026-10-28T05:38:15Z",
   "posts": [
     {
       "id": "2026-10-05-they-paid-him-first",
       "title": "They Paid Him First",
       "tiktok": {
-        "views": 225,
-        "likes": 1,
-        "comments": 0,
-        "shares": 0,
-        "source": "tikwm"
+        "error": "tikwm: HTTP Error 403: Forbidden | yt-dlp: ERROR: [TikTok] 7693249186770341142: Unexpected response from webpage request; p"
       },
       "youtube": {
         "views": 49,
@@ -23,11 +19,7 @@
       "id": "2026-10-06-wrong-number",
       "title": "Wrong Number",
       "tiktok": {
-        "views": 64,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "source": "tikwm"
+        "error": "tikwm: HTTP Error 403: Forbidden | yt-dlp: ERROR: [TikTok] 7693477914381159702: Unexpected response from webpage request; p"
       },
       "youtube": {
         "views": 0,
