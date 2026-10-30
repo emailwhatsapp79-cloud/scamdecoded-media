@@ -371,3 +371,7 @@ time_utc,post,platform,views,likes,comments,shares,source,error
 2026-10-30T00:57:20Z,2026-10-05-they-paid-him-first,youtube,,,,,,https://pipedapi.kavin.rocks: HTTP Error 403: Forbidden | https://pipedapi.adminforge.de: HTTP Error 403: Forbidden | https://api.piped.private.coffee: HTTP Error 500: Internal Server Error
 2026-10-30T00:57:20Z,2026-10-06-wrong-number,tiktok,,,,,,"tikwm: HTTP Error 403: Forbidden | yt-dlp: ERROR: [TikTok] 7693477914381159702: Video not available, status code 10231; ple"
 2026-10-30T00:57:20Z,2026-10-06-wrong-number,youtube,,,,,,https://pipedapi.kavin.rocks: HTTP Error 403: Forbidden | https://pipedapi.adminforge.de: HTTP Error 403: Forbidden | https://api.piped.private.coffee: HTTP Error 500: Internal Server Error
+2026-10-30T09:57:57Z,2026-10-05-they-paid-him-first,tiktok,225,1,0,0,tikwm,
+2026-10-30T09:57:57Z,2026-10-05-they-paid-him-first,youtube,,,,,,https://pipedapi.kavin.rocks: HTTP Error 403: Forbidden | https://pipedapi.adminforge.de: HTTP Error 403: Forbidden | https://api.piped.private.coffee: HTTP Error 500: Internal Server Error
+2026-10-30T09:57:57Z,2026-10-06-wrong-number,tiktok,64,0,0,0,tikwm,
+2026-10-30T09:57:57Z,2026-10-06-wrong-number,youtube,,,,,,https://pipedapi.kavin.rocks: HTTP Error 403: Forbidden | https://pipedapi.adminforge.de: HTTP Error 403: Forbidden | https://api.piped.private.coffee: HTTP Error 500: Internal Server Error
