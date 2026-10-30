@@ -375,3 +375,7 @@ time_utc,post,platform,views,likes,comments,shares,source,error
 2026-10-30T09:57:57Z,2026-10-05-they-paid-him-first,youtube,,,,,,https://pipedapi.kavin.rocks: HTTP Error 403: Forbidden | https://pipedapi.adminforge.de: HTTP Error 403: Forbidden | https://api.piped.private.coffee: HTTP Error 500: Internal Server Error
 2026-10-30T09:57:57Z,2026-10-06-wrong-number,tiktok,64,0,0,0,tikwm,
 2026-10-30T09:57:57Z,2026-10-06-wrong-number,youtube,,,,,,https://pipedapi.kavin.rocks: HTTP Error 403: Forbidden | https://pipedapi.adminforge.de: HTTP Error 403: Forbidden | https://api.piped.private.coffee: HTTP Error 500: Internal Server Error
+2026-10-30T17:59:39Z,2026-10-05-they-paid-him-first,tiktok,225,1,0,0,tikwm,
+2026-10-30T17:59:39Z,2026-10-05-they-paid-him-first,youtube,49,-1,,,https://api.piped.private.coffee,
+2026-10-30T17:59:39Z,2026-10-06-wrong-number,tiktok,64,0,0,0,tikwm,
+2026-10-30T17:59:39Z,2026-10-06-wrong-number,youtube,0,-1,,,https://api.piped.private.coffee,
